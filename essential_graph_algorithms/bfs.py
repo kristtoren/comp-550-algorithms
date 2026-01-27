@@ -77,3 +77,5 @@ if __name__ == "__main__":
 
     print("Distances:", distances)
     print("Parents:", parents)
+
+# RUNTIME: O(n + m) where n = # vertices and m = # edges

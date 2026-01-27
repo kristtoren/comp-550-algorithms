@@ -43,7 +43,7 @@ graph = {
 }
 
 pre = {v: -1 for v in graph} # creating the pre dictionary that maps each vertex to its arrival time
-post = {v: -1 for v in graph} # creating the pre dictionary that maps each vertex to its exit time
+post = {v: -1 for v in graph} # creating the post dictionary that maps each vertex to its exit time
 t = 1 #initializing the timer
 
 back_edge_count = 0 # tracks the number of back edges
@@ -79,3 +79,5 @@ if __name__ == "__main__":
     print("Pre list: ", pre)
     print("Post list: ", post)
     print(f"Total Back Edges: {back_edge_count}")
+
+# RUNTIME: O(n + m) where n = # vertices and m = # edges
